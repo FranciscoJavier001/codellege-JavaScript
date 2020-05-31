@@ -1,0 +1,50 @@
+<!-- Se necesita un programa que solicite el numero de respuestas correctas, incorrectas y en blanco, correspondientes a postulantes, y muestre su puntaje final considerado, que por cada respuesta correcta tendrá 4 puntos, respuestas incorrectas tendrá -1 y respuestas en blanco tendrá 0. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Estructuras Secuenciales 03 - Respuestas</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 class="text-center mt-2">Calculo Resultados</h1>
+
+    <div class="container">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-4">
+                    <label for="">Respustas Correctas</label>
+                    <input type="number" id="inpCorrectas" class="form-control">
+                </div>
+                <div class="col-4">
+                    <label for="">Respuestas Incorrectas</label>
+                    <input type="number" id="inpIncorrectas" class="form-control">
+                </div>
+                <div class="col-4">
+                    <label for="">Respuestas en Blanco</label>
+                    <input type="number" id="inpBlanco" class="form-control">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <button class="btn btn-outline-primary btn-block mt-3" id="calculaCalificacion">Calcular Calificacion</button>
+                </div>
+            </div>
+
+            <div class="alert alert-success mt-3" id="mostrarResultado">
+                Calificacion Final
+            </div>
+        </div>
+    </div>
+
+    <script src="./../js/app.js"></script>
+</body>
+
+</html>

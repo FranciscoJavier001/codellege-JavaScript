@@ -1,0 +1,86 @@
+<!-- La asociación de vinicultores tiene como política fijar un precio inicial al kilo uva, la cual se clasifica en tipos A y B, y además en tamaños 1 y 2. Cuando se realiza la venta del producto, esta es de un solo tipo y tamaño, se requiere determinar cuánto recibirá un productor por la uva que entrega un embarque, considerando lo siguiente:
+•	Si es tipo A, se le cargan 20c al precio inicial cuando es de tamaño 1; y 30c cuando es de tamaño 2.
+•	Si es tipo B, se rebajan 30c cuando es de tamaño 1, y 50c cuando es de tamaño 2  
+ -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Estructuras Selectivas 11 - Uva</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 class="text-center mt-2">Uva</h1>
+    <div class="container">
+        <div class="jumbotron">
+
+            <div class="row">
+                <div class="col-3">
+                    <div class="form-group">
+                        <label for="">Tipo de Uva</label>
+                        <select id="inpTipo" class="form-control">
+                            <option value="A">Tipo A</option>
+                            <option value="B">Tipo B</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="form-group">
+                        <label for="">Tamaño</label>
+                        <select id="inpTamano" class="form-control">
+                            <option value="1">Tamaño 1</option>
+                            <option value="2">Tamaño 2</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="form-group">
+                        <label for="">Costo Inicial</label>
+                        <input type="number" id="inpCosto" class="form-control">
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="form-group">
+                        <label for="">KG Vendidos</label>
+                        <input type="number" id="inpVendidos" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <button class="btn btn-outline-success btn-block" id="btnApp">Calcular</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <div id="zonePrint" class="alert alert-success">
+                            Tipo Uva:</br>
+                            Tamaño Uva:</br>
+                            Costo: $</br>
+                            Costo Final: $</br>
+                            Kg Vendidos:</br>
+                            Costo Total: $
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./../js/app.js"></script>
+</body>
+
+</html>

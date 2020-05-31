@@ -1,0 +1,78 @@
+<!-- 2.	Una compañía de viajes cuenta con cuatro tipos de autobuses (A, B, C y D), cada uno tiene un precio por kilómetro recorrido por persona, los costos respectivos son $1.5, $2.0, $2.5 y $3.0. Se requiere determinar el costo total y por persona del viaje considerando que cuando éste se presupuesta debe haber un mínimo de 20 personas, de lo contrario el cobro se realiza con base en este número límite (20). -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Estructuras Selectivas 02 - Autobuses</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 class="text-center mt-2">Compañia Viajes</h1>
+    <div class="container">
+        <div class="jumbotron">
+
+            <div class="row">
+                <div class="col-4 text-center">
+                    <div class="form-group">
+                        <label for="">Tipo de Autobus</label>
+                        <select id="inpBus" class="form-control">
+                            <option value="1.5">A</option>
+                            <option value="2">B</option>
+                            <option value="2.5">C</option>
+                            <option value="3">D</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-4 text-center">
+                    <div class="form-group">
+                        <label for="">Distancia (Km)</label>
+                        <input type="number" id="inpDistancia" class="form-control">
+                    </div>
+                </div>
+
+                <div class="col-4 text-center">
+                    <div class="form-group">
+                        <label for="">Personas</label>
+                        <input type="number" id="inpPersonas" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <button class="btn btn-outline-success btn-block" id="btnApp">Calcular</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <div id="zonePrint" class="alert alert-success">
+                            Presupueso:</br>
+                            Precio Km Autobus: $</br>
+                            Distancia:</br>
+                            Pasajeros:</br>
+                            Costo Pasajero:</br>
+                            Costo Total:</br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./../js/app.js"></script>
+</body>
+
+</html>

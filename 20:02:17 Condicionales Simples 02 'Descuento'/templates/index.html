@@ -1,0 +1,46 @@
+<!-- Un almacén se hace un 20% de descuento a los clientes cuya compra supere los $1000 ¿Cual será la cantidad que pagara una persona por su compra? -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Estructuras Condicionales Simples 02 - Descuento</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 class="text-center mt-2">Descuento</h1>
+    <div class="container">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <label for="">Ingresa el Monto Total: </label>
+                        <input id="monto" type="number" class="form-control" placeholder="Monto Total: $">
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12">
+                    <button id="btnCompra" class="btn btn-outline-success btn-block">Compra</button>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12">
+                    <div id="zonePrint" class="alert alert-success">
+                        El Total a pagar: $
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./../js/app.js"></script>
+</body>
+
+</html>

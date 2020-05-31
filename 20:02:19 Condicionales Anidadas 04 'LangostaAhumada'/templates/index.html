@@ -1,0 +1,55 @@
+<!-- La Langosta Ahumada" es una empresa dedicada a ofrecer banquetes, sus tarifas son las siguientes: el costo del platillo por persona es de $95.00, pero si el numero de personas es mayor a 200 pero menor o igual a 300, el costo es de $85.00. Para mas de 300 personas el costo del platillo es de $75.00. Se requiere un algorimo que ayude a determinar el presupuesto que se debe presentar a los clientes. -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Condicionales Anidadas 04 - La Langosta Ahumada</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 class="text-center mt-2">Langosta Ahumada</h1>
+    <div class="container">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <label for="">Numero de Personas</label>
+                        <input type="number" id="inpPersonas" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <button class="btn btn-outline-success btn-block" id="btnApp">Calcular Presupuesto</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <div class="alert alert-success" id="zonePrint">
+                            Presupuesto:</br>
+                            Costo del Platillo:</br>
+                            Cantidas de Personas:</br>
+                            Costo Total:</br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./../js/app.js"></script>
+</body>
+
+</html>

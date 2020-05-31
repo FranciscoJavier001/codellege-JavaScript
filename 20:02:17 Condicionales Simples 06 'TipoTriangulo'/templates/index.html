@@ -1,0 +1,58 @@
+<!-- Diseñe un algoritmo que lea tres longitudes y determine si forman o no un triángulo. Si es un triángulo determine de qué tipo de triángulo se trata entre: equilátero (si tiene tres lados iguales), isósceles (si tiene dos lados iguales) o escaleno (si tiene tres lados desiguales). Considere que para formar un triángulo se requiere que: "el lado mayor sea menor que la suma de los otros dos lados". -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Estructuras Condicionales Simples 06 - Triangulo</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 class="text-center mt-2">Triangulo</h1>
+    <div class="container">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-4 text-center">
+                    <div class="form-group">
+                        <label for="">Lado Mayor</label>
+                        <input type="number" id="inpLadoMayor" class="form-control">
+                    </div>
+                </div>
+                <div class="col-4 text-center">
+                    <div class="form-group">
+                        <label for="">Lado A</label>
+                        <input type="number" id="inpLadoA" class="form-control">
+                    </div>
+                </div>
+                <div class="col-4 text-center">
+                    <div class="form-group">
+                        <label for="">Lado B</label>
+                        <input type="number" id="inpLadoB" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <button class="btn btn-outline-success btn-block" id="btnAnalizar">Analizar</button>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-12">
+                    <div class="alert alert-success" id="zonePrint">
+                        Tipo:
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./../js/app.js"></script>
+</body>
+
+</html>

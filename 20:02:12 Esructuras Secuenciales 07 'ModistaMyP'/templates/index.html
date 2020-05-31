@@ -1,0 +1,42 @@
+<!-- Una modista, para realizar sus prendas de vestir, encarga las telas al extranjero. Para cada pedido, tiene que proporcionar las medidas de la tela en pulgadas, pero ella generalmente las tiene en metros. Realice un algoritmo para ayudar a resolver el problema, determinando cuántas pulgadas debe pedir con base en los metros que requiere. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Estructuras Secuenciales 07 - Modista</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 class="text-center mt-2">Telas Modista</h1>
+
+    <div class="container">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-12">
+                    <label for="">Longitud de tela (m)</label>
+                    <input type="number" id="inpMetros" class="form-control">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <button class="btn btn-outline-primary btn-block mt-2" id="calcularPulgadas">Calcular</button>
+                </div>
+            </div>
+
+            <div class="alert alert-success mt-2" id="mostrarPulgadas">
+                Total Pulgadas:
+            </div>
+        </div>
+    </div>
+
+    <script src="./../js/app.js"></script>
+</body>
+
+</html>

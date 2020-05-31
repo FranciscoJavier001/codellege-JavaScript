@@ -1,0 +1,66 @@
+<!-- Cierta empresa proporciona un bono mensual a sus trabajadores, el cual puede ser por su antigüedad o bien por el monto de su sueldo (el que sea mayor), de la siguiente forma:
+•	Cuando la antigüedad es mayor a dos años, pero menor a 5, se otorga el 20% de su sueldo; cuando es de 5 años o más, 30%. Ahora bien, el bono por concepto de sueldo es si este es menor a $1000 se da 25% de este, cuando este es mayor a $1000, pero menor igual a $3500, se otorga el 15% de su sueldo, para más de 3500 el 10%  -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Estructuras Selectivas 15 - Bono Mensual</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 class="text-center mt-2">Bono Mensual</h1>
+    <div class="container">
+        <div class="jumbotron">
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="">Ingresa tu Sueldo:</label>
+                        <input type="number" name="" id="inpSueldo" class="form-control">
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="">Ingresa tu Antiguedad</label>
+                        <input type="number" name="" id="inpAntiguedad" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <button class="btn btn-outline-success btn-block" id="btnApp">Calcular Bono</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <div id="zonePrint" class="alert alert-success">
+                            Sueldo: $</br>
+                            Antguedad:</br>
+                            Bono:</br>
+                            Total: $
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./../js/app.js"></script>
+</body>
+
+</html>

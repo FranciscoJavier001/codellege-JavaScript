@@ -1,0 +1,47 @@
+<!-- Se desea calcular la distancia recorrida (m) por un móvil que tiene velocidad constante (m/s) durante un tiempo T (Sg), considerar que es un movimiento rectilíneo uniforme. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Estructuras Secuenciales 02 - Distancia/Tiempo</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <h1 class="text-center mt-3">Distancia Recorrida</h1>
+
+    <div class="container">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-6 text-center">
+                    <label for="">Velocidad constante (m/seg)</label>
+                    <input type="number" id="inpVelocidad" class="form-control">
+                </div>
+                <div class="col-6 text-center">
+                    <label for="">Tiempo (seg)</label>
+                    <input type="number" id="inpTiempo" class="form-control">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <button class="btn btn-outline-primary btn-block mt-2" id="btnCalcular">Calcular</button>
+                </div>
+            </div>
+
+            <div class="alert alert-success mt-2" id="imprimeDistancia">
+                Distancia Recorrida
+            </div>
+        </div>
+    </div>
+
+    <script src="./../js/app.js"></script>
+</body>
+
+</html>

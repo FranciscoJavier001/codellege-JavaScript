@@ -1,0 +1,50 @@
+<!-- Una empresa desea determinar el monto de un cheque que debe proporcionar a uno de sus empleados que tendrá que ir por equis número de días a la ciudad de Monterrey; los gastos que cubre la empresa son: hotel, comida y 100.00 pesos -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Estructuras Secuenciales 09 - Viaticos</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 class="text-center mt-2">Viaticos</h1>
+
+    <div class="container">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-4 text-center">
+                    <label for="">Dias de Viaje</label>
+                    <input type="number" id="inpDias" class="form-control">
+                </div>
+                <div class="col-4 text-center">
+                    <label for="">Costo Diario del Hotel</label>
+                    <input type="number" id="inpHotel" class="form-control">
+                </div>
+                <div class="col-4 text-center">
+                    <label for="">Costo Diario de Comida</label>
+                    <input type="number" id="inpComida" class="form-control">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <button class="btn btn-outline-primary mt-2 btn-block" id="calcularViaticos">Calcular Viaticos</button>
+                </div>
+            </div>
+
+            <div class="alert alert-success mt-2" id="zonePrint">
+                Viaticos: $
+            </div>
+        </div>
+    </div>
+
+    <script src="./../js/app.js"></script>
+</body>
+
+</html>

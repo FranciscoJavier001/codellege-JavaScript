@@ -1,0 +1,78 @@
+<!--Una compañía de paquetería internacional tiene servicio en algunos países de América del Norte, América Central, América del sur, Europa y Asia. 
+    El costo por el servicio de paquetería se basa en el peso del paquete y la zona a la cual va dirigido.
+Zona	Ubicación	Costo/Gramo
+1	América del Norte	$11.00
+2	América Central	$10.00
+3	América del Sur	$12.00
+4	Europa	$24.00
+5	Asia	$27.00
+•	Parte de su política implica que los paquetes con un peso superior a 5 kg no son transportados, por logística y seguridad. -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Estructuras Selectivas 17 - Paqueteria</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 class="text-center mt-2">Paqueteria</h1>
+    <div class="container">
+        <div class="jumbotron">
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="">Ubicacion</label>
+                        <select name="" id="idUbicacion" class="form-control">
+                            <option value="11">America del Norte</option>
+                            <option value="10">America Central</option>
+                            <option value="12">America del Sur</option>
+                            <option value="24">Europa</option>
+                            <option value="27">Asia</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="">Peso (Kg)</label>
+                        <input type="number" class="form-control" id="inpPeso">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <button class="btn btn-outline-success btn-block" id="btnApp">Calcular Costo</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <div id="zonePrint" class="alert alert-success">
+                            Paquete Diriguido:</br>
+                            Peso:</br>
+                            Costo Total: $
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./../js/app.js"></script>
+</body>
+
+</html>

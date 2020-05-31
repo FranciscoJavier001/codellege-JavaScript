@@ -1,0 +1,78 @@
+<!-- Se necesita el registro de la producción (unidades) logradas por un operario a lo largo de la semana (lunes a sábado). Elabore un algoritmo que nos muestre si el operario recibirá incentivos sabiendo que el promedio de producción mínima es de 100 unidades. -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Estructuras Condicionales Simples 05 - Produccion</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 class="text-center mt-2">Registro de Produccion</h1>
+    <div class="container">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-2">
+                    <div class="form-group">
+                        <div class="label text-center">Lunes</div>
+                        <input type="number" id="inpLunes" class="form-control">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="form-group">
+                        <div class="label text-center">Martes</div>
+                        <input type="number" id="inpMartes" class="form-control">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="form-group">
+                        <div class="label text-center">Miercoles</div>
+                        <input type="number" id="inpMiercoles" class="form-control">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="form-group">
+                        <div class="label text-center">Jueves</div>
+                        <input type="number" id="inpJueves" class="form-control">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="form-group">
+                        <div class="label text-center">Viernes</div>
+                        <input type="number" id="inpViernes" class="form-control">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="form-group">
+                        <div class="label text-center">Sabado</div>
+                        <input type="number" id="inpSabado" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <button class="btn btn-outline-success btn-block" id="btnCalcular">Calcular</button>
+                </div>
+            </div>
+
+            <div class="row mt-2">
+                <div class="col-12">
+                    <div class="alert alert-success" id="zonePrint">
+                        Operario
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./../js/app.js"></script>
+</body>
+
+</html>
